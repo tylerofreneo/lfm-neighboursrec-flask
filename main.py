@@ -45,3 +45,6 @@ def recommend() :
     user = request.get_json()['user']
     recommendations = get_recs(user)
     return jsonify({'recommendations' : recommendations})
+
+if __name__ == "__main__":
+    app.run()
